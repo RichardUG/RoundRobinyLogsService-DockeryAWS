@@ -163,6 +163,6 @@ y también podemos revisar que nuestros contenedores esten creados, que son los 
 
 Para acceder a nuestro proyecto desplegado en localhost, consultamos la siguiente URL
 
-[localhost:35000](localhost:35000)
+[http://localhost:35000](http://localhost:35000)
 
 

@@ -196,6 +196,8 @@ Ahora podemos hacer la prueba ingresando dos mensajes
 
 Ahora iniciaremos el proceso para desplegar nuestro proyecto en ```AWS```, par inciar con esto lo primero que debemos hacer es crear un repositorio en ```Docker hub```, para subir nuestro proyecto en él, en mi caso este sera mi repositorio
 
-* Nombe: roundrobinylogservices-dockeryaws
-* Link: [roundrobinylogservices-dockeryaws](https://hub.docker.com/repository/docker/richardug/roundrobinylogservices-dockeryaws)
-* 
+* Nombre usuario: richardug
+* Nombe repositorio: roundrobinylogservices-dockeryaws
+* Link: [https://hub.docker.com/repository/docker/richardug/roundrobinylogservices-dockeryaw](https://hub.docker.com/repository/docker/richardug/roundrobinylogservices-dockeryaws)
+
+

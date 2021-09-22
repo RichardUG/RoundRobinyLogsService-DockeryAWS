@@ -187,6 +187,6 @@ Ahora podemos hacer la prueba ingresando dos mensajes
 > 
 > ![](/img/prueba2localsinresultado.PNG)
 > 
-> Resultado primer mensaje
+> Resultado segundo mensaje
 > 
 > ![](/img/prueba2localconresultado.PNG)

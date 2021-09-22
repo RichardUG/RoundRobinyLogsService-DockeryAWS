@@ -126,3 +126,67 @@ Lo primero que debemos hacer tras construir nuestro proyecto mvn en nuestro comp
 docker-compose up -d
 ```
 
+El cual al finalizar de hacer la construcción de las imagenes y los contenedores nos mostrara en consola el siguiente resultado
+
+![](/img/build.PNG)
+
+En consola podemos revisar que nuestras imagenes se hayan creado con el siguiente comando 
+
+```
+docker images
+```
+
+Que nos mostrara el siguiente resultado
+
+![](/img/imagesConsole.PNG)
+
+En consola también podemos revisar que nuestros contenedores se hayan creado con el siguiente comando 
+
+```
+docker ps
+```
+
+Que nos mostrara el siguiente resultado
+
+![](/img/containersConsole.PNG)
+
+
+Y si tenemos vista grafica de nuestro docker, en mi caso ```portainer``` también podemos ir a revisar si se encuentran creadas nuestras imagenes, que en este caso son las que se encuentran seleccionadas:
+
+![](/img/images.PNG)
+
+y también podemos revisar que nuestros contenedores esten creados, que son los que se encuentran seleccionados
+
+![](/img/containers.PNG)
+
+## Prueba en localHost
+
+Para acceder a nuestro proyecto desplegado en localhost, consultamos la siguiente URL
+
+[http://localhost:35000](http://localhost:35000)
+
+Que nos mostrara esta pagina
+
+![](/img/localnomensaje.PNG)
+
+Ahora podemos hacer la prueba ingresando dos mensajes
+
+> ### Prueba1
+> 
+> Primer mensaje
+> 
+> ![](/img/prueba1localsinresultado.PNG)
+> 
+> Resultado primer mensaje
+> 
+> ![](/img/prueba1localconresultado.PNG)
+> 
+> ### Prueba2
+> 
+> Segundo mensaje
+> 
+> ![](/img/prueba2localsinresultado.PNG)
+> 
+> Resultado primer mensaje
+> 
+> ![](/img/prueba2localconresultado.PNG)

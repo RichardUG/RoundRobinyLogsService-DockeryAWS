@@ -200,4 +200,24 @@ Ahora iniciaremos el proceso para desplegar nuestro proyecto en ```AWS```, par i
 * Nombe repositorio: roundrobinylogservices-dockeryaws
 * Link: [https://hub.docker.com/repository/docker/richardug/roundrobinylogservices-dockeryaw](https://hub.docker.com/repository/docker/richardug/roundrobinylogservices-dockeryaws)
 
+Ahora crearemos nuevos tag para cada una de nuestras imagenes con el nombre de la nueva imagen como "Nombre usuario Docker"/"Nombre repositorio" es decir richardug/roundrobinylogservices-dockeryaws y con tag el nombre de cada recurso, que sera los siguientes comandos:
 
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```

@@ -163,4 +163,5 @@ y también podemos revisar que nuestros contenedores esten creados, que son los 
 
 Para acceder a nuestro proyecto desplegado en localhost, consultamos la siguiente URL
 
-[go](https://github.com/RichardUG/RoundRobinyLogsService-DockeryAWS){:target="_blank"}.
+<a href="https://github.com/RichardUG/RoundRobinyLogsService-DockeryAWS" target="_blank">example class="hljs-tag"></a>
+

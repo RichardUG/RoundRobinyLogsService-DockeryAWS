@@ -165,4 +165,28 @@ Para acceder a nuestro proyecto desplegado en localhost, consultamos la siguient
 
 [http://localhost:35000](http://localhost:35000)
 
+Que nos mostrara esta pagina
 
+![](/img/localnomensaje.PNG)
+
+Ahora podemos hacer la prueba ingresando dos mensajes
+
+> ### Prueba1
+> 
+> Primer mensaje
+> 
+> ![](/img/prueba1localsinresultado.PNG)
+> 
+> Resultado primer mensaje
+> 
+> ![](/img/prueba1localconresultado.PNG)
+> 
+> ### Prueba2
+> 
+> Segundo mensaje
+> 
+> ![](/img/prueba2localsinresultado.PNG)
+> 
+> Resultado primer mensaje
+> 
+> ![](/img/prueba2localconresultado.PNG)

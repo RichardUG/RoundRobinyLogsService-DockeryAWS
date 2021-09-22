@@ -203,21 +203,64 @@ Ahora iniciaremos el proceso para desplegar nuestro proyecto en ```AWS```, par i
 Ahora crearemos nuevos tag para cada una de nuestras imagenes con el nombre de la nueva imagen como "Nombre usuario Docker"/"Nombre repositorio" es decir richardug/roundrobinylogservices-dockeryaws y con tag el nombre de cada recurso, que sera los siguientes comandos:
 
 ```
-
+docker tag roundrobinylogservice-awsydocker_roundrobin:latest richardug/roundrobinylogservices-dockeryaws:roundrobin
 ```
 
 ```
-
+docker tag roundrobinylogservice-awsydocker_logservice1:latest richardug/roundrobinylogservices-dockeryaws:logservice1
 ```
 
 ```
-
+docker tag roundrobinylogservice-awsydocker_logservice2:latest richardug/roundrobinylogservices-dockeryaws:logservice2
 ```
 
 ```
-
+docker tag roundrobinylogservice-awsydocker_logservice3:latest richardug/roundrobinylogservices-dockeryaws:logservice3
 ```
 
 ```
+docker tag mongo:latest richardug/roundrobinylogservices-dockeryaws:mongo
+```
+
+Lo cual en consola lo veriamos así
+
+![](/img/newtags.PNG)
+
+Y tras ejecutar los  comandos podemos verificar que se hayan creado las imagenes con el siguiente comando
 
 ```
+docker images
+```
+
+Y nos mostrara el siguiente resultado
+
+![](/img/newtagsImages.PNG)
+
+Ahora empujaremos las imagenes a nuestro repositorio de ```Docker hub```
+
+
+```
+docker push richardug/roundrobinylogservices-dockeryaws:roundrobin
+```
+
+```
+docker push richardug/roundrobinylogservices-dockeryaws:logservice1
+```
+
+```
+docker push richardug/roundrobinylogservices-dockeryaws:logservice2
+```
+
+```
+docker push richardug/roundrobinylogservices-dockeryaws:logservice3
+```
+
+```
+docker push richardug/roundrobinylogservices-dockeryaws:mongo
+```
+
+Podemos visualizar que las imagenes se hayan subido dirigiendonos a nuestro repositorio en ```Docker hub``` y nos debe mostrar algo así
+
+![](/img/imagesDockerhub.PNG)
+
+

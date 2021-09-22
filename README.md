@@ -153,7 +153,7 @@ Que nos mostrara el siguiente resultado
 
 Y si tenemos vista grafica de nuestro docker, en mi caso ```portainer``` también podemos ir a revisar si se encuentran creadas nuestras imagenes, que en este caso son las que se encuentran seleccionadas:
 
-![](/img/images.PNG)
+![](/img/image.PNG)
 
 y también podemos revisar que nuestros contenedores esten creados, que son los que se encuentran seleccionados
 

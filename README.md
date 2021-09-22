@@ -159,4 +159,8 @@ y también podemos revisar que nuestros contenedores esten creados, que son los 
 
 ![](/img/containers.PNG)
 
+## Prueba en localHost
 
+Para acceder a nuestro proyecto desplegado en localhost, consultamos la siguiente URL
+
+[go](https://github.com/RichardUG/RoundRobinyLogsService-DockeryAWS){:target="_blank"}.

@@ -380,6 +380,45 @@ Y ahora haremos el mismo proceso para las reglas de salida para que se pueda com
 
 ## Despliegue en AWS
 
+Ya podemos desplegar en AWS teniendo la garantia que nuestras imagenes vvan a poder hablar y escuchar en sus respectivos puertos, por lo cual ejecutaremos las imagenes que se encuentran en nuestro repositorio para que las guarde y ejecute, esto lo haremos con los siguientes comandos
 
+```
+docker run -d -p 35000:6000 --name roundrobin richardug/roundrobinylogservices-dockeryaws:roundrobin
+```
 
+```
+docker run -d -p 35001:6000 --name logservice1 richardug/roundrobinylogservices-dockeryaws:logservice1
+```
+
+```
+docker run -d -p 35002:6000 --name logservice2 richardug/roundrobinylogservices-dockeryaws:logservice2
+```
+
+```
+docker run -d -p 35003:6000 --name logservice3 richardug/roundrobinylogservices-dockeryaws:logservice3
+```
+
+```
+docker run -d -p 27017:6000 --name mongo richardug/roundrobinylogservices-dockeryaws:mongo
+```
+
+Tras ejecutar estos comandos se crean las imagenes que las podemos conultar con el comando
+
+```
+docker images
+```
+
+Nos muestra el siguiente resultado
+
+![](/img/imagesaws.PNG)
+
+Y también se crean los contenedores con el comando
+
+```
+docker ps
+```
+
+Que nos muestra el siguiente resultado
+
+![](/img/containersaws.PNG)
 

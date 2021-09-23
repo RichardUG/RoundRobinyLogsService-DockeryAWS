@@ -192,9 +192,9 @@ Ahora podemos hacer la prueba ingresando dos mensajes
 > ![](/img/prueba2localconresultado.PNG)
 
 
-## Despliegue en AWS
+## Despliegue en Docker Hub
 
-Ahora iniciaremos el proceso para desplegar nuestro proyecto en ```AWS```, par inciar con esto lo primero que debemos hacer es crear un repositorio en ```Docker hub```, para subir nuestro proyecto en él, en mi caso este sera mi repositorio
+Ahora iniciaremos el proceso para desplegar nuestras imagenes en ```AWS```, para inciar con esto lo primero que debemos hacer es crear un repositorio en ```Docker hub```, para subir nuestro proyecto en él, en mi caso este sera mi repositorio
 
 * Nombre usuario: richardug
 * Nombe repositorio: roundrobinylogservices-dockeryaws
@@ -264,3 +264,62 @@ Podemos visualizar que las imagenes se hayan subido dirigiendonos a nuestro repo
 ![](/img/imagesDockerhub.PNG)
 
 
+## Creación maquina en AWS
+
+Antes de desplegar en ```AWS``` debemos tener un entorno en el cual desplegarlo, por los cual crearemos una maquina virtual EC2 con ambiente linux en la consola de ```AWS```; para hacer esto debemos dirigirnos a nuestra consola de ```AWS``` e iniciarla, nos daremos cuenta que estara iniciada al estar la luz verde enecendida al lado de donde dice AWS
+
+![](/img/iniciaraws.PNG)
+
+Tras encenderse la luz damos click en ```AWS``` y nos dirigira a la siguiente pestaña en donde seleccionaremos "Lance una maquina virtuall con EC2"
+
+![](/img/ec2.PNG)
+
+Ahora nos encontraremos en otra ventana que nos solicitara escoger el sistema operativo con el que se va a trabajar, elegiremos "Amazon Linux 2 AMI (HVM), SSD Volume Type" de 64 bits(x86)
+
+![](/img/maquina.PNG)
+
+Tras esto nos enviara a escoger las caracteristicas que queremos que tenga el sistema operativo, seleccionaremos la que tiene la etiqueta verde que dice "Apto para capa gratuita" y oprimimos la opción del boton azul "revisar y lanzar"
+
+![](/img/tipo.PNG)
+
+Después nos muestra las caracteristicas de la maquina y oprimimos en "lanzar"
+
+![](/img/lanzar.PNG)
+
+Y nos desplegara este menú, seleccionamos "Crear nuevo par de claves" de tipo "RSA" y le damos unn nombre, en este caso es "roundrobin" y las descargamos, tras la descarga se habilitara la opción "Lanzar instancias", a la cual le daremos clic
+
+![](/img/claves.PNG)
+
+Ahora seleccionamos nuestra instancia y en el menpu superior de "Acciones" elegimos la opción conectar
+
+![](/img/conectar.PNG)
+
+Adentro elegimos la opción ```ssh``` y copiamos la ruta de conexión en mi caso es esta:
+
+```
+ssh -i "roundrobin.pem" ec2-user@ec2-54-157-197-123.compute-1.amazonaws.com
+```
+
+Después en nuestro computador creamos una nueva carpeta
+
+![](/img/nuevoec2.PNG)
+
+Dentro de esa carpeta vamos a colocar el archivo de claves que descargamos de la consola de amazon
+
+![](/img/claveec2.PNG)
+
+Y desplegamos una consola en esta ubicación
+
+![](/img/ubicacion.PNG)
+
+En esta ruta escribimos la ruta de conexión ssh que obtuvimos anteriormente, con el cual accderemos a nuestra maquina EC2 desde la consola
+
+```
+ssh -i "roundrobin.pem" ec2-user@ec2-54-157-197-123.compute-1.amazonaws.com
+```
+
+Ahora pondremos el siguiente comando para actualizar el sistema a la versión mas reciente
+
+```
+sudo yum update -y
+```

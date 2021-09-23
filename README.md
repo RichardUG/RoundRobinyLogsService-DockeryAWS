@@ -159,8 +159,6 @@ y también podemos revisar que nuestros contenedores esten creados, que son los 
 
 ![](/img/containers.PNG)
 
-## Prueba en localHost
-
 Para acceder a nuestro proyecto desplegado en nuestros docker local, consultamos la siguiente URL compuesta por
 
 ```
@@ -171,9 +169,12 @@ Que nos mostrara esta pagina
 
 ![](/img/localnomensaje.PNG)
 
-Ahora podemos hacer la prueba ingresando dos mensajes
+## Prueba en localHost
 
-> ### Prueba1
+
+Ahora podemos hacer las pruebas ingresando dos mensajes
+
+> ### Prueba 1
 > 
 > Primer mensaje
 > 
@@ -183,7 +184,7 @@ Ahora podemos hacer la prueba ingresando dos mensajes
 > 
 > ![](/img/prueba1localconresultado.PNG)
 > 
-> ### Prueba2
+> ### Prueba 2
 > 
 > Segundo mensaje
 > 
@@ -429,4 +430,46 @@ Ahora teniendo nuestra imagenes podemos verificar que ya se encuentra desplegado
 Que nos mostrara la siguiente ventana
 
 ![](/img/despliegueaws.PNG)
+
+
+## Prueba despliegue en AWS
+
+Ahora podemos hacer las pruebas ingresando dos mensajes
+
+> ### Prueba 1
+> 
+> Primer mensaje
+> 
+> ![](/img/prueba1amazonsinresultado.PNG)
+> 
+> Resultado primer mensaje
+> 
+> ![](/img/prueba1amazonconresultado.PNG)
+> 
+> ### Prueba 2
+> 
+> Segundo mensaje
+> 
+> ![](/img/prueba2amazonsinresultado.PNG)
+> 
+> Resultado segundo mensaje
+> 
+> ![](/img/prueba2amazonconresultado.PNG)
+
+## Construido con
+
+* [Maven](https://es.wikipedia.org/wiki/Maven): Herramienta la cual permite realizar la construción de proyectos, realizarles pruebas y otras funciones.
+* [Git](https://es.wikipedia.org/wiki/Git): Software de control de versionamiento centralizado.
+* [Intelij](https://es.wikipedia.org/wiki/IntelliJ_IDEA): es un entorno de desarrollo integrado (IDE) para el desarrollo de programas informáticos. Es desarrollado por JetBrains, y está disponible en dos ediciones: edición para la comunidad1 y edición comercial.
+* [Java](https://www.oracle.com/java/): Lenguaje de programación de propósito general, es decir, que sirve para muchas cosas, para web, servidores, aplicaciones móviles, entre otros. Java también es un lenguaje orientado a objetos, y con un fuerte tipado de variables.
+* [Docker](https://es.wikipedia.org/wiki/Docker_(software)): Es un proyecto de código abierto que automatiza el despliegue de aplicaciones dentro de contenedores de software, proporcionando una capa adicional de abstracción y automatización de virtualización de aplicaciones en múltiples sistemas operativos
+* [SSH](https://es.wikipedia.org/wiki/Secure_Shell): Es el nombre de un protocolo y del programa que lo implementa cuya principal función es el acceso remoto a un servidor por medio de un canal seguro en el que toda la información está cifrada
+
+## Autor
+[Richard Santiago Urrea Garcia](https://github.com/RichardUG)
+
+## Licencia & Derechos de Autor
+**©** Richard Santiago Urrea Garcia, Estudiante de Ingeniería de Sistemas de la Escuela Colombiana de Ingeniería Julio Garavito
+
+Licencia bajo la [GNU General Public License](https://github.com/RichardUG/RoundRobinyLogsService-DockeryAWS/blob/master/LICENSE).
 

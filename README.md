@@ -161,9 +161,11 @@ y también podemos revisar que nuestros contenedores esten creados, que son los 
 
 ## Prueba en localHost
 
-Para acceder a nuestro proyecto desplegado en localhost, consultamos la siguiente URL
+Para acceder a nuestro proyecto desplegado en nuestros docker local, consultamos la siguiente URL compuesta por
 
-[http://localhost:35000](http://localhost:35000)
+```
+http://<IP asignada del dispositivo>:35000
+```
 
 Que nos mostrara esta pagina
 
@@ -421,4 +423,10 @@ docker ps
 Que nos muestra el siguiente resultado
 
 ![](/img/containersaws.PNG)
+
+Ahora teniendo nuestra imagenes podemos verificar que ya se encuentra desplegado consultando en este caso el link [http://ec2-54-157-197-123.compute-1.amazonaws.com:35000/](http://ec2-54-157-197-123.compute-1.amazonaws.com:35000/)
+
+Que nos mostrara la siguiente ventana
+
+![](/img/despliegueaws.PNG)
 

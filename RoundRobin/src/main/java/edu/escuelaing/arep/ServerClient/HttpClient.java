@@ -3,21 +3,25 @@ package edu.escuelaing.arep.ServerClient;
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
-import org.slf4j.LoggerFactory;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.*;
+import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.logging.Logger;
 
 public class HttpClient{
     private String[] ports = {":35001",":35002",":35003"};
     private int nServer = 0;
-    private String url="http://192.168.0.9";
+    private String url="";
 
-    public HttpClient() throws UnknownHostException {
-        //url="http://"+getHostIp();
+    public HttpClient( ) throws IOException {
+        //url="http://"+start();
         System.out.println(url);
     }
+
 
     public static String getHostIp(){
 
@@ -89,4 +93,11 @@ public class HttpClient{
         nServer=(nServer + 1) % ports.length;
     }
 
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
 }

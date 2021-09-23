@@ -323,3 +323,57 @@ Ahora pondremos el siguiente comando para actualizar el sistema a la versión ma
 ```
 sudo yum update -y
 ```
+
+Después instalaremos docker en nuestro ambiente con el siguiente comando 
+
+```
+sudo yum install docker
+```
+
+Y asignaremos al usuario docker permisos de administrador para que no tengamos que hacer uso del comando sudo cada vez que ejecutemos un comando docker
+
+```
+sudo usermod -a -G docker ec2-user
+```
+
+Después de esto saldremos y volveremos a entrar para que los cambios se refresquen
+
+```
+exit
+```
+
+```
+ssh -i "roundrobin.pem" ec2-user@ec2-54-157-197-123.compute-1.amazonaws.com
+```
+
+Tras volver a ingresar inicializamos el servicio docker
+
+```
+sudo service docker start
+```
+
+Y al consultar las imagenes nos daremos cuenta que no existe ninguna, por lo cual las debemos desplegar en nuestro ambiente de la maquina EC2
+
+```
+docker images
+```
+
+## Despliegue en AWS
+
+Ahora que tenemos instalado nuestra maquina podemos desplegar nuestras imagenes docker en el, pero para eso necesitamos crear reglas de entrada para que la maquina pueda leer los puertos que necesitamos; por lo cual iremos a nuestra instancia desde la consola de amazón y nos dirigiremos a la pestaña de "seguridad" y oprimiremos en el link de "grupos de seguridad"
+
+![](/img/seguridad.PNG)
+
+Ahora en reglas de entrada seleccionaremos "edit inbound rules"
+
+![](/img/reglasdeentrada.PNG)
+
+Lo cual nos mostrara esta pestaña en la cual crearemos nuestras reglas oprimiendo en "agregar regla"
+
+![](/img/agregar.PNG)
+
+
+
+
+
+
